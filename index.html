@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Graphic Era University</h1>
+                    <p>Transforming Dreams Into Reality</p>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="hero">
+            <div class="converter-section" id="textToVoiceSection">
+                <h1>Text to Voice</h1>
+                <textarea id="inputText" placeholder="Enter text to speak..."></textarea>
+                <button id="speakButton" onclick="speakText()">Speak</button>
+            </div>
+            
+            <div class="converter-section" id="voiceToTextSection">
+                <h1>Voice to Text</h1>
+                <textarea id="outputText" placeholder="Speech-to-text output..."></textarea>
+                <div class="row">
+                    <button id="startButton" onclick="startListening()">Start</button>
+                    <button id="stopButton" onclick="stopListening()" style="display:none;">Stop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
